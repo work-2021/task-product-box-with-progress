@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "poppins-r";
+  src: url("../fonts/poppins-regular.ttf");
+}
+@font-face {
+  font-family: "poppins-eb";
+  src: url("../fonts/poppins-extra-bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins-r";
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1, h3 {
+  font-family: "poppins-eb";
+}
+.product {
+  width: 90%;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: 2px 4px 25px rgba(10,10,10,.15);
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .product {
+    width: 40%;
+  }
+}
+.product .img-box {
+  max-height: 215px;
+}
+.product .img-box img {
+  width: 100%;
+  height: 215px;
+}
+.product .content {
+  padding: 40px 16px 15px;
+  position: relative;
+}
+.product .content .profile {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 25px rgba(10,10,10,.15);
+  position: absolute;
+  top: -36px;
+  right: 28px;
+  border-radius: 50%;
+}
+.product .content .profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.product .content .title h1 {
+  font-size: 1.4em;
+  color: #353535;
+  margin-bottom: 5px;
+}
+.product .content .title p,
+.product .content .details .location {
+  color: #777;
+  font-size: .9em;
+  display: flex;
+  align-items: center;
+}
+.product .content .title p span {
+  margin: 0 5px;
+  color: #00A09C;
+}
+.product .content .description {
+  margin: 10px 0;
+  font-size: .9em;
+  color: #888;
+}
+.product .content .details .location img {
+  margin-right: 5px;
+  transform: scale(1.1);
+}
+.product .content .details .progress {
+  width: 100%;
+  margin: 10px 0 15px;
+  min-height: 22px;
+  background-color: #eee;
+  box-shadow: inset 2px 0 25px rgba(150,150,150,.2);
+  position: relative;
+}
+.product .content .details .progress:after {
+  content: "";
+  width: 60%;
+  height: 100%;
+  background-color: #00A09C;
+  border-radius: 0 30px 30px 0;
+  position: absolute;
+  left: 0;
+}
+.product .content .details .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product .content .details .price h3 {
+  color: #353535;
+  font-size: 1.4em;
+}
+.product .content .details .price span {
+  color: #888;
+  font-size: .85em;
+}
